@@ -28,3 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Muestra solo la sección de inicio al cargar la página
     showSection("inicio");
 });
+
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
