@@ -29,7 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
     showSection("inicio");
 });
 
+// Función para alternar el menú de hamburguesa
 function toggleMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('active');
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
 }
+
+document.querySelectorAll('.menu li a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.menu').classList.remove('active');
+    });
+});
+
