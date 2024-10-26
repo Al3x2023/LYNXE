@@ -1,0 +1,148 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: #1b1a1f;
+    background-color: #f3f2f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado de navegación */
+header {
+    background-color: #0078d4;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #c7e0f4;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #0078d4;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Contenedor de servicios */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+/* Estilo de artículo de servicios */
+.service-grid article {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.service-grid article:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenido de tecnología */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.tech-item {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+input, textarea {
+    padding: 0.875rem;
+    border: 1px solid #c8c6c4;
+    border-radius: 6px;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0078d4;
+}
+
+button {
+    background-color: #0078d4;
+    color: #ffffff;
+    border: none;
+    padding: 0.875rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+/* Iconos de redes sociales */
+.contact-icons i {
+    font-size: 2rem;
+    color: #0078d4;
+    transition: color 0.2s ease;
+}
+
+.contact-icons i:hover {
+    color: #005a9e;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1b1a1f;
+    color: #f3f2f1;
+    font-size: 0.875rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
